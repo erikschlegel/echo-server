@@ -38,7 +38,7 @@ ALL_METHODS = ["GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS"]
 def index(path):
     data = {
         "path": request.path,
-        "method": request.method,
+        "methods": request.method,
         "headers": list(request.headers.items()),
         "form": list(request.form.items()),
         "args": list(request.args.items()),
