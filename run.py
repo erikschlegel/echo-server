@@ -48,7 +48,7 @@ def index(path):
         },
         "content-type": request.content_type,
         "files": [(f[0], f[1].filename) for f in request.files.items()],
-        "json": request.json,
+        "json-demo": request.json,
         "raw-data": str(request.data),
     }
 
